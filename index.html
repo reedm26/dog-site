@@ -24,26 +24,31 @@
     <main>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4 text-center">
-            <button class="btn btn-info" onclick="a">Jeff</button>
-            <button class="btn btn-info">Leia</button>
-            <button class="btn btn-info">Max</button>
+          <div class="col-4 text-center id="dog-names">
+            <button class="btn btn-info" onclick="setActiveDog('Jeff')">
+              Jeff
+            </button>
+            <button class="btn btn-info" onclick="setActiveDog('Leia')">
+              Leia
+            </button>
+            <button class="btn btn-info" onclick="setActiveDog('Max')">
+              Max
+            </button>
             <img
               id="dog-pic"
-              src="http://www.dogster.com/wp-content/uploads/2019/01/Chocolate-lab-smiling-happy-looking-up.jpg"
-              alt="Picture of the doggie"
-              class="flex-end"
+              src="//placehold.it/200x200"
+              class="w-100 mt-2"
             />
           </div>
           <div class="col-6">
             <h3>Pet Name: <span id="dog-names"></span></h3>
-            <h3>Status: <span id="dog-moods"></span></h3>
-            <h3>Pets: <span id="pet-counter"></span></h3>
+            <h3>Status: <span id="dog-status"></span></h3>
+            <h3>Pets: <span id="dog-pets"></span></h3>
           </div>
         </div>
         <div class="row">
           <div class="col-12 text-center mb-2">
-            <button id="pet-button" class="btn btn-info"><h2>Pet</h2></button>
+            <button id="pet-button" class="btn btn-info" onclick="pet()"><h2>Pet</h2></button>
           </div>
           <div class="col-12 text-center">
             <button id="treat-button" class="btn btn-info">
